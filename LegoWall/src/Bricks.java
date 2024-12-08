@@ -16,4 +16,14 @@ public class Bricks {
 
         return this.brickSizes[randBrick];
     }
+    public int getMaxBrick() {
+        int maxBrick = 0;
+
+        for (int brick:brickSizes) {
+            if (brick > maxBrick) {
+                maxBrick = brick;
+            }
+        }
+        return maxBrick;
+    }
 }
