@@ -4,7 +4,7 @@ public class Bricks {
     public int[] brickSizes;
 
     public Bricks() {
-        brickSizes = new int[] {1,2,3,4,5,6,7,8,9,10,11,12};
+        brickSizes = new int[] {1,2,3,4,6,8,10,12};
     }
     public int[] getBrickSizes() {
         return this.brickSizes;
@@ -15,5 +15,15 @@ public class Bricks {
         int randBrick = rand.nextInt(numberOfBricks);
 
         return this.brickSizes[randBrick];
+    }
+    public int getMaxBrick() {
+        int maxBrick = 0;
+
+        for (int brick:brickSizes) {
+            if (brick > maxBrick) {
+                maxBrick = brick;
+            }
+        }
+        return maxBrick;
     }
 }

@@ -1,4 +1,3 @@
-// The Main.java handles also all the user inputs
 import java.util.List;
 
 public class Main {
