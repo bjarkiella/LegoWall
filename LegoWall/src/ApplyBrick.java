@@ -44,7 +44,11 @@ public class ApplyBrick {
         List<Integer> currentLayer = new ArrayList<>();
         int maxBrick = bricks.getMaxBrick();
 
-        for (int j = 1; j < layers; j++) {
+        for (int j = 2; j < layers; j++) {
+            if (j == layers-1) {
+                System.out.println("stopher");
+            }
+            
             prevLayer = fullLayout.get(j-1);
             currentLayer = fullLayout.get(j);
             List<Integer> remIdx = rules.holeCheck(currentLayer, prevLayer);
