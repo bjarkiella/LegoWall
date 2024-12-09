@@ -13,7 +13,8 @@ public class PrintBricks {
         String[] printSigns = new String[] {"x","-"};
         int maxBrick = bricks.getMaxBrick();
 
-        for (int i = 0; i < brickLayout.size(); i++) {
+        // Printing backwards to match with that the first layer in the list is the bottom layer printed
+        for (int i = brickLayout.size() - 1; i >= 0 ; i--) {
             List<Integer> currentLayer = brickLayout.get(i);
 
             for (int j = 0; j < currentLayer.size(); j++) {

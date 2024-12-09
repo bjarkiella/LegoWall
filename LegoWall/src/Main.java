@@ -23,7 +23,7 @@ public class Main {
         System.out.println(" ");
         System.out.println("Number of layers:" + layers);
         System.out.println("Total width:" + width);
-        printListList(fullLayout);
+        //printListList(fullLayout);
 
     }
 
